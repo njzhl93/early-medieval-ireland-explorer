@@ -24,6 +24,17 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v6
 
+      - name: Prepare public reconstruction asset
+        shell: bash
+        run: |
+          cat \
+            assets/images/dyflin_ad950_birds_eye_final.b64.part1.txt \
+            assets/images/dyflin_ad950_birds_eye_final.b64.part2.txt \
+            assets/images/dyflin_ad950_birds_eye_final.b64.part3.txt \
+            | base64 --decode > assets/images/dyflin_ad950_birds_eye_final.webp
+          test -s assets/images/dyflin_ad950_birds_eye_final.webp
+          rm assets/images/dyflin_ad950_birds_eye_final.b64.part*.txt
+
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v6
         with:
