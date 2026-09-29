@@ -31,8 +31,12 @@ jobs:
             assets/images/dyflin_ad950_birds_eye_final.b64.part1.txt \
             assets/images/dyflin_ad950_birds_eye_final.b64.part2.txt \
             assets/images/dyflin_ad950_birds_eye_final.b64.part3.txt \
+            assets/images/dyflin_ad950_birds_eye_final.b64.part4.txt \
+            assets/images/dyflin_ad950_birds_eye_final.b64.part5.txt \
+            assets/images/dyflin_ad950_birds_eye_final.b64.part6.txt \
             | base64 --decode > assets/images/dyflin_ad950_birds_eye_final.webp
           test -s assets/images/dyflin_ad950_birds_eye_final.webp
+          echo "b008be57a221f7b9886d50c7b084d7d2cdf83d098406473d658b5aea72013ba  assets/images/dyflin_ad950_birds_eye_final.webp" | sha256sum -c -
           rm assets/images/dyflin_ad950_birds_eye_final.b64.part*.txt
 
       - name: Configure GitHub Pages
