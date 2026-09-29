@@ -6,17 +6,50 @@
   <meta name="description" content="Dublin / Dyflin AD 900–1050 interactive historical reconstruction timeline.">
   <title>Dublin / Dyflin · Early Medieval Ireland Explorer</title>
   <link rel="stylesheet" href="assets/showcase.css">
+  <link rel="stylesheet" href="assets/v022.css">
 </head>
 <body class="page-dublin">
   <header class="site-header">
     <a class="brand" href="index.html"><span class="brand-mark">É</span><span><b>Early Medieval Ireland Explorer</b><small>成为至高王 · Research Atlas</small></span></a>
-    <nav class="site-nav"><a href="index.html">全国入口</a><a href="#timeline">时间轴</a><a href="#controls">空间控制</a><a href="#provenance">来源</a></nav>
+    <nav class="site-nav"><a href="index.html">全国入口</a><a href="#reconstruction">鸟瞰复原</a><a href="#timeline">时间轴</a><a href="#controls">空间控制</a><a href="#provenance">来源</a></nav>
   </header>
   <main>
     <section class="city-hero shell">
       <div><p class="eyebrow">DEEP-DIVE CITY · AD 900–1050</p><h1>Dublin <span>/ Dyflin</span></h1><p>用四个时间相位观察城市从早期 Viking settlement 到高密度 Hiberno-Norse town 的变化。可视边界全部是复原层，不等于实测考古边界。</p></div>
       <div class="city-meta"><span>53.3423° N</span><span>6.2675° W</span><span>Evidence-aware</span></div>
     </section>
+
+    <section id="reconstruction" class="section shell birds-eye-section">
+      <header class="section-heading">
+        <p class="eyebrow">BIRD’S-EYE RECONSTRUCTION</p>
+        <h2>Dyflin · c. AD 950</h2>
+        <p>这张鸟瞰图是当前 AD950 研究模型的公开视觉整合层。它用于展示城市、水文、防御与景观之间的历史关系，不代表考古证据能够支持图中每一栋建筑、道路或岸线的精确位置。</p>
+      </header>
+      <div class="birds-eye-grid">
+        <figure class="birds-eye-figure">
+          <button class="birds-eye-open" id="openReconstruction" type="button" aria-label="放大查看 Dyflin AD950 鸟瞰复原">
+            <img src="assets/images/dyflin_ad950_birds_eye_final.webp" alt="Bird’s-eye reconstruction of Dyflin (Dublin) around AD 950, showing the River Liffey, a compact Viking town enclosed by Bank 2 earthwork defences, timber buildings and plots, roads, wetland context, and small vessels on the water.">
+            <span>Click to enlarge</span>
+          </button>
+          <figcaption><strong>Dyflin (Dublin), c. AD 950 — bird’s-eye historical reconstruction.</strong> Research-informed public interpretation · Geometry D presentation · not a measured archaeological plan.</figcaption>
+        </figure>
+        <aside class="reconstruction-metadata">
+          <section><p class="metadata-kicker">IMAGE STATUS</p><ul><li>Research-informed reconstruction</li><li>Public showcase image</li><li>Geometry D presentation</li><li>Not a measured archaeological plan</li></ul></section>
+          <section><p class="metadata-kicker">HISTORICAL BASIS</p><ul><li>River Liffey</li><li>Lower Poddle relationship</li><li>Dubh Linn / wetland context</li><li>Bank 2 defensive phase</li><li>Fishamble / plot-based urban structure</li><li>Timber urban fabric</li></ul></section>
+          <section><p class="metadata-kicker">INTERPRETIVE ELEMENTS</p><ul><li>Individual house placement and count</li><li>Vegetation and field pattern</li><li>Boat placement</li><li>Continuous landscape appearance</li><li>Camera and perspective</li></ul></section>
+          <section class="qa-card"><p class="metadata-kicker">AD950 QA</p><ul><li>Bank 2, not mature Bank 3</li><li>No continuous water-filled defensive moat</li><li>Compact mid-10th-century urban mass</li><li>Natural hydrology visually separate from defence</li><li>No later monumental stone quay treatment</li></ul></section>
+        </aside>
+      </div>
+    </section>
+
+    <dialog id="reconstructionDialog" class="reconstruction-dialog">
+      <div class="reconstruction-dialog-inner">
+        <button id="closeReconstruction" class="reconstruction-dialog-close" type="button" aria-label="关闭大图">×</button>
+        <img src="assets/images/dyflin_ad950_birds_eye_final.webp" alt="Enlarged bird’s-eye reconstruction of Dyflin around AD 950.">
+        <p>Dyflin (Dublin), c. AD 950 · Research-informed reconstruction · Geometry D presentation</p>
+      </div>
+    </dialog>
+
     <section id="timeline" class="shell city-workbench">
       <div class="phase-control" role="tablist" aria-label="Dublin 时间相位"><button data-year="900" role="tab">AD 900</button><button data-year="950" role="tab">AD 950</button><button data-year="1000" role="tab">AD 1000</button><button data-year="1050" role="tab">AD 1050</button></div>
       <div class="workbench-grid">
@@ -32,26 +65,31 @@
         </aside>
       </div>
     </section>
+
     <section id="phaseFocus" class="section shell ad950-focus">
       <div class="focus-heading"><p class="eyebrow">CURRENT RECONSTRUCTION FOCUS</p><h2>AD 950 · Bank 2 town</h2></div>
       <div class="focus-grid"><article><span>01</span><h3>Defence ≠ Water</h3><p>Bank 2 是 earth / gravel defence corridor。西、南边界不得被渲染成连续水填护城河。</p></article><article><span>02</span><h3>Hydrology first</h3><p>Liffey、Poddle 与 Dubh Linn 是独立自然/潮汐层，不能被城防边界吞并。</p></article><article><span>03</span><h3>Compact urban mass</h3><p>避免把 AD950 画成已经完成 11 世纪后期扩张的超密集大型港城。</p></article><article><span>04</span><h3>Plot logic</h3><p>保持 street → plot → main house → access → rear structure / yard 的城市组织。</p></article></div>
     </section>
+
     <section id="controls" class="section section-dark controls-section">
       <div class="shell">
         <header class="split-intro"><div><p class="eyebrow light">REAL-WORLD CONTROLS</p><h2>我们确切知道的位置，与我们推断的线</h2></div><p>下面使用 EPSG:2157 / Irish Transverse Mercator 的真实控制点。点可以达到 Geometry B；点之间的历史水文连接仍保持 Geometry C。</p></header>
         <div class="controls-grid"><div class="control-plot-wrap"><svg id="controlPlot" viewBox="0 0 720 460" role="img" aria-label="Dublin hydrology control plot"></svg><div class="control-legend"><span><i class="control-b"></i> Geometry B control</span><span><i class="control-c"></i> Geometry C relationship</span></div></div><div class="control-table" id="controlTable"></div></div>
       </div>
     </section>
+
     <section id="method" class="section shell confidence-section">
       <header class="section-heading narrow"><p class="eyebrow">READ THE MAP CORRECTLY</p><h2>三种空间语言</h2></header>
       <div class="confidence-lanes"><article class="lane-b"><b>B</b><div><h3>Point / control</h3><p>可独立定位、可复现的考古或官方地理控制。</p></div></article><article class="lane-c"><b>C</b><div><h3>Link / relation</h3><p>受控制点和考古语境约束，但尚不足以声称精确中心线或边界。</p></div></article><article class="lane-d"><b>D</b><div><h3>Render / reconstruction</h3><p>为了让历史阶段可以被看见而生成的 schematic 表现；永远不冒充测量。</p></div></article></div>
     </section>
+
     <section id="provenance" class="section shell provenance-section">
       <header class="section-heading"><p class="eyebrow">PROVENANCE & RIGHTS</p><h2>每一层都带来源，也带使用边界</h2></header>
-      <div class="source-grid"><article><span>GSI</span><h3>Geological Survey Ireland</h3><p>用于 River Poddle 的公开空间控制；项目记录其自产数据许可为 CC BY 4.0。</p></article><article><span>EXCAVATION</span><h3>Public archaeological reports</h3><p>使用少量公开地点坐标与考古事实，不复制报告平面或来源图件。</p></article><article><span>NMI / REILLY</span><h3>Figure 33 research layer</h3><p>用于内部 topology research；source-style geometry 继续保持 research-only / non-public。</p></article><article><span>OSM</span><h3>Modern navigation only</h3><p>OpenStreetMap 只作为现代空间导航底图，不作为 Viking-period shoreline 或 city extent 证据。</p></article></div>
+      <div class="source-grid v022-source-grid"><article><span>GSI</span><h3>Geological Survey Ireland</h3><p>用于 River Poddle 的公开空间控制；项目记录其自产数据许可为 CC BY 4.0。</p></article><article><span>EXCAVATION</span><h3>Public archaeological reports</h3><p>使用少量公开地点坐标与考古事实，不复制报告平面或来源图件。</p></article><article><span>NMI / REILLY</span><h3>Figure 33 research layer</h3><p>用于内部 topology research；source-style geometry 继续保持 research-only / non-public。</p></article><article><span>OSM</span><h3>Modern navigation only</h3><p>OpenStreetMap 只作为现代空间导航底图，不作为 Viking-period shoreline 或 city extent 证据。</p></article><article><span>VISUAL RECONSTRUCTION</span><h3>Project presentation asset</h3><p>AD950 鸟瞰图用于公开解释与展示，归类为 Geometry D；不承担 source-plan geometry claim。</p></article></div>
     </section>
   </main>
-  <footer class="site-footer shell"><div><b>Dublin / Dyflin deep dive</b><span>Historical baseline v0.20 · presentation v0.21</span></div><a href="index.html">← 返回 Ireland Explorer</a></footer>
+  <footer class="site-footer shell"><div><b>Dublin / Dyflin deep dive</b><span>Historical baseline v0.20 · presentation v0.22</span></div><a href="index.html">← 返回 Ireland Explorer</a></footer>
   <script src="assets/dublin.js"></script>
+  <script src="assets/reconstruction.js"></script>
 </body>
 </html>
