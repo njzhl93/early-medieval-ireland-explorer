@@ -1,5 +1,5 @@
 {
-  "version": "0.23",
+  "version": "0.24",
   "cities": [
     {
       "id": "dublin",
@@ -16,7 +16,7 @@
       "modern_name": "Waterford",
       "historic_name": "Veðrafjǫrðr",
       "type": "Viking / Hiberno-Norse town",
-      "status": "research_pilot",
+      "status": "research_pack",
       "page": "waterford.html",
       "navigation_anchor": [-7.1086, 52.2602],
       "navigation_anchor_role": "modern navigation anchor only; not historical extent"
