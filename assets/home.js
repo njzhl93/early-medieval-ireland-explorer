@@ -14,7 +14,7 @@ function addWaterfordCard(registry) {
   const card = document.createElement('a');
   card.className = 'map-card-link waterford-pilot-link';
   card.href = waterford.page;
-  card.innerHTML = '<span>Archaeological reconstruction pack</span><b>Waterford / Veðrafjǫrðr · AD 900 → 1050</b><i>→</i>';
+  card.innerHTML = '<span>AD1050 pre-production ready</span><b>Waterford / Veðrafjǫrðr · first Geometry D candidate next</b><i>→</i>';
   dublinCard.insertAdjacentElement('afterend', card);
 }
 
@@ -32,9 +32,9 @@ function renderCityNetwork(registry) {
   section.className = 'section shell city-network';
   section.innerHTML = `
     <header class="section-heading">
-      <p class="eyebrow">CITY NETWORK · v0.24</p>
-      <h2>从单城复原，进入多城市比较</h2>
-      <p>Dublin 是当前深度复原基准；Waterford 已建立 archaeological reconstruction pack，但尚未通过最终鸟瞰图生成门槛。新城市只有在 evidence / geometry 合同足够明确后，才会升级。</p>
+      <p class="eyebrow">CITY NETWORK · v0.25</p>
+      <h2>从多城市研究，进入第二座城市的图像预生产</h2>
+      <p>Dublin 是当前深度复原基准；Waterford 已把 AD1050 的水文、街轴、城市范围、防御和 waterfront 不确定性转换成可执行 Geometry D 约束，下一阶段可以生成第一张受控候选图，但仍不是最终历史定稿。</p>
     </header>
     <div class="city-network-grid">
       <article class="city-network-card featured">
@@ -44,10 +44,10 @@ function renderCityNetwork(registry) {
         <a href="${dublin.page}">Open Dublin →</a>
       </article>
       <article class="city-network-card research">
-        <span class="status">Archaeological reconstruction pack</span>
+        <span class="status">AD1050 pre-production</span>
         <h3>${waterford.modern_name} / ${waterford.historic_name}</h3>
-        <p>六个公开考古控制、11 世纪城市形态证据、Dundory / Suir / St John’s marsh 约束，以及逐阶段 must / may / must-not-show 规则。</p>
-        <a href="${waterford.page}">Open Waterford →</a>
+        <p>六个 generation gates 已转换为明确的复原规则：Suir / St John’s marsh、Peter / High Street、Geometry D 西向包络、非测量式防御、非连续 quay，以及 St Olaf’s 的谨慎处理。</p>
+        <a href="${waterford.page}#gate">Open Waterford AD1050 gate →</a>
       </article>
       <article class="city-network-card planned">
         <span class="status">Planned</span>
@@ -56,7 +56,7 @@ function renderCityNetwork(registry) {
         <span class="status">No speculative reconstruction yet</span>
       </article>
     </div>
-    <div class="city-status-key"><span class="deep">deep reconstruction</span><span class="research">research pack</span><span class="planned">planned</span></div>
+    <div class="city-status-key"><span class="deep">deep reconstruction</span><span class="research">pre-production</span><span class="planned">planned</span></div>
   `;
   hero.insertAdjacentElement('afterend', section);
 
@@ -65,7 +65,7 @@ function renderCityNetwork(registry) {
   if (stats[2]) stats[2].innerHTML = '<dt>10</dt><dd>public controls</dd>';
 
   const milestone = document.querySelector('.site-footer span');
-  if (milestone) milestone.textContent = 'Become the High King · v0.24 multi-city framework';
+  if (milestone) milestone.textContent = 'Become the High King · v0.25 Waterford AD1050 pre-production';
 }
 
 try {
