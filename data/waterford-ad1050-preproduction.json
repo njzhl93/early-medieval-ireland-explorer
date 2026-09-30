@@ -1,0 +1,172 @@
+{
+  "version": "0.25",
+  "city_id": "waterford",
+  "target_phase": "AD1050",
+  "status": "READY_FOR_FIRST_GEOMETRY_D_CANDIDATE",
+  "scope": "First bird's-eye candidate only; not final reconstruction approval.",
+  "rationale": "Waterford now has enough mid-eleventh-century urban morphology to generate a controlled Geometry D candidate, provided unresolved shoreline, defence and ecclesiastical details remain explicitly schematic or omitted.",
+  "gate_resolution": [
+    {
+      "id": "HYDROLOGY",
+      "status": "RESOLVED_AS_RELATIONSHIP_NOT_LINE",
+      "rule": "River Suir must define the northern/northeastern waterfront. St John's River and associated marsh must constrain the southern/southeastern side as a broad wetland relationship. Do not draw a surveyed AD1050 marsh edge."
+    },
+    {
+      "id": "STREET_AXES",
+      "status": "RESOLVED_WITH_MIXED_CONFIDENCE",
+      "rule": "Peter Street is the strongest mid-eleventh-century street control. High Street is a principal late-Viking axis. Use both as generalized east-west urban structure. North-south lanes may descend toward the Suir, but Olaf Street must not be treated as a securely fixed AD1050 lane."
+    },
+    {
+      "id": "WESTWARD_EXTENT",
+      "status": "RESOLVED_AS_GEOMETRY_D_ENVELOPE",
+      "rule": "Show a substantial mid-eleventh-century town extending west from the older Dundory/eastern core into the Peter Street and High Street urban zone, but taper occupation before the later medieval western city and never use the later walled circuit as the AD1050 edge."
+    },
+    {
+      "id": "DEFENCE",
+      "status": "RESOLVED_AS_PRESENCE_WITH_UNRESOLVED_ALIGNMENT",
+      "rule": "A landward earthwork/ditch defensive concept may be visible, but its alignment must remain generalized. The Bakehouse Lane AD1070-1080 defence is a chronological negative control and must not become the AD1050 line."
+    },
+    {
+      "id": "WATERFRONT",
+      "status": "RESOLVED_BY_NEGATIVE_CONSTRAINT",
+      "rule": "Use tidal/natural river-facing activity, modest landing places and small craft. Do not render a continuous measured quay, monumental stone waterfront, or regular engineered harbour frontage."
+    },
+    {
+      "id": "ST_OLAF_CONTEXT",
+      "status": "RESOLVED_BY_OMISSION_FOR_FIRST_CANDIDATE",
+      "rule": "St Olaf's has Viking-foundation context, but its exact AD1050 architectural form is not secure enough for a dominant landmark. Omit a monumental church in candidate 1; at most preserve an unobtrusive ecclesiastical-context placeholder for later review."
+    }
+  ],
+  "historical_morphology": {
+    "peter_street": {
+      "confidence": "HIGH_FOR_MID_11C_RELATIVE_TO_OTHER_WATERFORD_STREETS",
+      "facts": [
+        "A 16 m length of metalled road was recorded and described as approximately 3.6 m wide.",
+        "The road is described as mid- to late-eleventh-century and contemporary with the earliest mid-eleventh-century houses.",
+        "Street-fronting Type 1 houses and smaller rear Type 2 structures are appropriate generalized building logic.",
+        "Fourteen adjoining plot boundaries are reported in synthesis literature, but exact plot geometry must not be copied into the public reconstruction."
+      ],
+      "render_rule": "Use a clear but non-surveyed east-west street with irregular frontage plots; do not encode the 3.6 m figure as a pixel-exact visual scale."
+    },
+    "high_street": {
+      "confidence": "MEDIUM_HIGH",
+      "facts": [
+        "High Street is described in excavation reporting as one of three principal late-Viking streets.",
+        "A Viking house was found at the earliest excavated level at 19-21 High Street."
+      ],
+      "render_rule": "Use as a second generalized east-west urban axis with timber frontage, without claiming exact AD1050 width or alignment."
+    },
+    "north_south_lanes": {
+      "confidence": "MEDIUM_AS_NETWORK_PATTERN",
+      "facts": [
+        "Synthesis literature describes three or four north-south roads/lanes crossing the principal east-west roads and continuing downslope toward the Suir.",
+        "Olaf Street evidence is tentative and late-eleventh-century."
+      ],
+      "render_rule": "Show a small number of irregular riverward lanes; do not label them as exact modern streets and do not lock Olaf Street into AD1050."
+    }
+  },
+  "master_constraints": {
+    "camera_and_series": [
+      "High-oblique bird's-eye view consistent with the Dublin / Dyflin series.",
+      "Landscape-first composition: the town must read through Suir + marsh + triangular ground before individual buildings.",
+      "Keep enough surrounding landscape to show that the town is a riverine settlement rather than a floating urban block."
+    ],
+    "geography_must_show": [
+      "River Suir along the northern/northeastern edge.",
+      "Broad St John's River / marsh relationship on the southern/southeastern side.",
+      "Triangular promontory logic with older eastern Dundory focus and later westward urban growth.",
+      "Natural water and marsh clearly distinct from any defensive earthwork."
+    ],
+    "urban_form_must_show": [
+      "Substantial but still compact mid-eleventh-century timber town.",
+      "Two dominant generalized east-west urban axes based primarily on Peter Street and High Street evidence.",
+      "Several narrower north-south access lanes running toward the Suir as a network pattern, not exact mapped streets.",
+      "Irregular street frontage: houses do not form a continuous modern facade line.",
+      "Long/narrow plot logic expressed schematically through street-fronting main houses, side access, rear structures, yards and pits.",
+      "Density should be highest around the better-attested Peter/High Street zone and should taper toward uncertain edges."
+    ],
+    "architecture_must_show": [
+      "Predominantly timber/post-and-wattle domestic architecture.",
+      "Generalized Type 1 / three-aisled street-fronting houses.",
+      "Smaller subsidiary/rear buildings behind principal houses.",
+      "Clay/wattle archaeological character translated visually through modest earth-toned timber buildings; floor materials do not need to be literally visible from the air.",
+      "Backlands with paths, fences, storage/rubbish pits and small work areas."
+    ],
+    "waterfront_may_show": [
+      "Small craft on the Suir.",
+      "Modest river-facing activity and informal landing points.",
+      "Short local timber access structures only if they do not read as a continuous archaeologically surveyed quay."
+    ],
+    "defence_may_show": [
+      "Generalized landward earth bank/ditch language if needed to communicate an enclosed town.",
+      "Defence should be visually subordinate to the settlement and should not imply that its exact AD1050 alignment is known."
+    ],
+    "must_not_show": [
+      "Bakehouse Lane AD1070-1080 ditch alignment as the exact AD1050 defensive boundary.",
+      "Peter/Olaf Street AD1083 feature as securely present in AD1050.",
+      "Modern or later stone Reginald's Tower as an AD1050 monument.",
+      "Anglo-Norman stone wall circuit or later mural towers.",
+      "Continuous stone quay or measured engineered Viking waterfront.",
+      "Perfect orthogonal street grid.",
+      "Uniform continuous house facades like a later medieval/modern street.",
+      "Dominant monumental stone St Olaf's church without a separate dating review.",
+      "Full later medieval western city extent.",
+      "Any visual line presented as Geometry B unless it is only a site control point."
+    ]
+  },
+  "candidate_1_visual_qa": [
+    "Can the viewer identify the Suir immediately?",
+    "Is the St John's marsh relationship readable without looking like a surveyed polygon?",
+    "Does the town clearly expand westward from an older eastern core without filling the later city?",
+    "Are Peter/High Street axes legible but not modern-straight?",
+    "Do houses form plots, yards and rear structures rather than a random village scatter?",
+    "Is the waterfront active but non-monumental and non-continuous?",
+    "If defence is visible, does it read as generalized earthwork rather than the post-1050 Bakehouse line?",
+    "Are later stone monuments absent?",
+    "Does the overall density look like a substantial mid-eleventh-century town while keeping uncertain margins soft?"
+  ],
+  "source_register": [
+    {
+      "id": "EMAP_WATERFORD_ROADS_HOUSES",
+      "title": "Early Medieval Dwellings and Settlements in Ireland, AD 400-1100",
+      "publisher": "Early Medieval Archaeology Project / UCD Research Repository",
+      "url": "https://researchrepository.ucd.ie/entities/publication/8ec7329a-4fd5-4555-a3b4-e0c2d6530b1f",
+      "use": "Peter Street road, street network synthesis, house and plot morphology"
+    },
+    {
+      "id": "EXCAVATIONS_1990_108",
+      "title": "1990:108 — Arundel Square, Waterford",
+      "publisher": "Excavations.ie",
+      "url": "https://excavations.ie/report/1990/Waterford/0001043/",
+      "use": "11th-century Peter Street surface, three-aisled houses, rear houses, paths, property boundaries"
+    },
+    {
+      "id": "EXCAVATIONS_1993_217",
+      "title": "1993:217 — 19-21 High Street, Waterford",
+      "publisher": "Excavations.ie",
+      "url": "https://excavations.ie/report/1993/Waterford/0001595/",
+      "use": "High Street late-Viking axis and earliest Viking house evidence"
+    },
+    {
+      "id": "EXCAVATIONS_1988_61",
+      "title": "1988:61 — Peter Street / Olaf Street, Waterford",
+      "publisher": "Excavations.ie",
+      "url": "https://excavations.ie/report/1988/Waterford/0000826/",
+      "use": "Peter Street properties/houses and post-1050 AD1083 chronological control"
+    },
+    {
+      "id": "EXCAVATIONS_1988_63",
+      "title": "1988:63 — Bakehouse Lane, Waterford",
+      "publisher": "Excavations.ie",
+      "url": "https://excavations.ie/report/1988/Waterford/0000828/",
+      "use": "AD1070-1080 defensive negative control"
+    },
+    {
+      "id": "NMS_WATERFORD_URBAN_SURVEY",
+      "title": "County Waterford and City Urban Archaeology Survey",
+      "publisher": "National Monuments Service",
+      "url": "https://www.archaeology.ie/app/uploads/2025/05/County_Waterford__City_Urban_Archaeology_Survey-1989.pdf",
+      "use": "topography, hydrological context and early quay uncertainty"
+    }
+  ]
+}
