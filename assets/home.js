@@ -63,6 +63,9 @@ function renderCityNetwork(registry) {
   const stats = document.querySelectorAll('.hero-stats > div');
   if (stats[0]) stats[0].innerHTML = '<dt>2</dt><dd>city datasets</dd>';
   if (stats[2]) stats[2].innerHTML = '<dt>10</dt><dd>public controls</dd>';
+
+  const milestone = document.querySelector('.site-footer span');
+  if (milestone) milestone.textContent = 'Become the High King · v0.24 multi-city framework';
 }
 
 try {
