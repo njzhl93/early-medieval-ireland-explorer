@@ -24,6 +24,19 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v6
 
+      - name: Validate public city data and runtime
+        shell: bash
+        run: |
+          python -m json.tool data/cities.json > /dev/null
+          python -m json.tool data/dublin.json > /dev/null
+          python -m json.tool data/waterford.json > /dev/null
+          node --check assets/city-runtime.js
+          node --check assets/dublin.js
+          node --check assets/reconstruction.js
+          grep -q 'research_pilot' data/waterford.json
+          grep -q 'Bakehouse Lane AD1070–1080 ditch as default AD1050 boundary' data/waterford.json
+          grep -q 'Geometry D' waterford.html
+
       - name: Prepare public reconstruction asset
         shell: bash
         run: |
