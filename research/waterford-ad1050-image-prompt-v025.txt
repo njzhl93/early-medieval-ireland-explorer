@@ -1,0 +1,218 @@
+WATERFORD / VEÐRAFJǪRÐR · AD1050
+FIRST CONTROLLED RECONSTRUCTION CANDIDATE
+
+GEOGRAPHY FIRST.
+EVIDENCE ≠ GEOMETRY.
+THIS IS A GEOMETRY D PUBLIC RECONSTRUCTION.
+DO NOT PRESENT THE IMAGE AS AN ARCHAEOLOGICAL SURVEY PLAN.
+
+==================================================
+PRIMARY GOAL
+==================================================
+
+Create a high-oblique bird's-eye reconstruction of Waterford / Veðrafjǫrðr around AD1050.
+
+The image must read first as a river-and-marsh town on triangular ground, then as a dense timber urban settlement.
+
+This is not Dublin copied to Waterford.
+The city morphology must follow Waterford-specific archaeological constraints.
+
+==================================================
+CAMERA / SERIES LOCK
+==================================================
+
+- high oblique bird's-eye view
+- same historical-atlas visual family as the approved Dyflin / Dublin series
+- geography visible beyond the town
+- no fantasy skyline
+- no cinematic monumental exaggeration
+- settlement scale readable before individual house detail
+
+==================================================
+GEOGRAPHY MUST SHOW
+==================================================
+
+1. River Suir must be the dominant water body along the northern / northeastern side of the town.
+2. St John's River / associated marsh must constrain the southern / southeastern side as a broad wetland relationship.
+3. The settlement must read as occupying triangular ground between the Suir and marshy low ground.
+4. Preserve an older eastern Dundory focus while showing substantial westward mid-eleventh-century urban growth.
+5. Natural water / marsh must remain visually distinct from defensive earthworks.
+
+DO NOT draw the St John's marsh edge as a crisp surveyed polygon.
+DO NOT imply an exact reconstructed AD1050 shoreline.
+
+==================================================
+URBAN EXTENT
+==================================================
+
+SHOW:
+- a substantial mid-eleventh-century town
+- denser occupation through the better-attested Peter Street / High Street urban zone
+- urban density tapering toward uncertain margins
+- older eastern focus still legible within the expanded town
+
+DO NOT:
+- fill the entire later medieval / Anglo-Norman city
+- use a later stone-wall perimeter as the urban edge
+- give all margins equal certainty or equal density
+
+==================================================
+STREET STRUCTURE
+==================================================
+
+Use TWO dominant generalized east-west urban axes:
+
+A. Peter Street — strongest street control for the target period
+B. High Street — principal late-Viking street with excavated Viking-house evidence
+
+Add a SMALL NUMBER of irregular north-south access lanes descending toward the Suir.
+
+IMPORTANT:
+- streets are schematic Geometry D
+- do not copy modern road geometry exactly
+- do not create a perfect orthogonal grid
+- do not lock Olaf Street as an exact AD1050 lane
+- street widths are visually plausible, not metric survey claims
+
+==================================================
+PLOT / HOUSE LOGIC
+==================================================
+
+The town must read as urban plots rather than a random village scatter.
+
+Use this organization repeatedly but with variation:
+
+street
+→ frontage plot
+→ principal timber house
+→ side access / path
+→ smaller rear structure
+→ yard / pit / work area
+
+Appropriate house language:
+- post-and-wattle / timber construction
+- generalized Type 1 / three-aisled principal houses
+- smaller subsidiary rear buildings
+- irregular frontage alignment
+- small gaps between some buildings
+- fences / plot divisions where useful
+- backlands with paths, pits, storage and modest craft activity
+
+Roofs may use subdued thatch-like historical presentation language, but this is interpretive rather than a direct roof-material claim.
+
+==================================================
+DEFENCE
+==================================================
+
+A generalized landward earthwork / ditch defensive concept MAY be visible.
+
+If shown:
+- keep it schematic
+- keep it subordinate to the town
+- do not make its alignment look surveyed
+- do not merge it with natural water or marsh
+
+STRICT PROHIBITION:
+DO NOT copy the Bakehouse Lane AD1070–1080 ditch / bank alignment backward as the exact AD1050 boundary.
+
+DO NOT show:
+- Anglo-Norman stone walls
+- later mural towers
+- continuous water-filled moat
+- crisp source-plan style defence geometry
+
+==================================================
+WATERFRONT
+==================================================
+
+The Suir waterfront should look active but only partly engineered.
+
+MAY SHOW:
+- small craft
+- river-facing activity
+- modest informal landing points
+- short local timber access structures
+
+MUST NOT SHOW:
+- continuous regular quay
+- monumental stone quay
+- long engineered waterfront presented as established fact
+- mature later medieval harbour frontage
+
+==================================================
+ECCLESIASTICAL CONTEXT
+==================================================
+
+Do not use a large stone St Olaf's church as a visual anchor in Candidate 1.
+
+St Olaf's has Viking-foundation context, but its exact AD1050 form is not secure enough for a dominant architectural reconstruction.
+
+If any ecclesiastical cue is included, keep it small, non-monumental and visually secondary.
+
+==================================================
+MONUMENT EXCLUSIONS
+==================================================
+
+DO NOT show the current / later stone form of Reginald's Tower.
+DO NOT insert later medieval towers, walls or monumental churches simply because they occupy the same modern area.
+
+==================================================
+LANDSCAPE / ACTIVITY
+==================================================
+
+- riverine environment
+- marshy low ground toward St John's side
+- tracks / paths outside the dense core
+- limited surrounding cultivation / pasture where appropriate
+- modest boats and waterfront work
+- no oversized harbour infrastructure
+- no castle-like skyline
+
+==================================================
+HISTORICAL DENSITY
+==================================================
+
+The city should feel:
+- clearly urban
+- busy
+- timber-built
+- plot-organized
+- commercially connected to the Suir
+
+But NOT:
+- a later stone medieval city
+- a modern street plan in costume
+- a perfectly planned gridded port
+- a fantasy Viking capital
+
+==================================================
+CANDIDATE 1 QA — REVIEW ORDER
+==================================================
+
+FIRST REVIEW ONLY THESE SIX ITEMS:
+
+1. River Suir geography
+2. St John's marsh relationship
+3. triangular settlement ground
+4. east-to-west urban extent
+5. street-axis hierarchy
+6. defence versus natural-water separation
+
+DO NOT spend time correcting individual houses until these six pass.
+
+==================================================
+LOCKED HISTORICAL NEGATIVES
+==================================================
+
+NO Bakehouse Lane AD1070–1080 line as exact AD1050 defence.
+NO Peter / Olaf AD1083 feature as secure AD1050 evidence.
+NO modern Reginald's Tower.
+NO Anglo-Norman stone wall.
+NO continuous monumental quay.
+NO exact modern street grid.
+NO dominant stone St Olaf's church.
+NO full later medieval western city extent.
+NO source-plan style precision.
+
+FINAL STATUS OF THIS IMAGE:
+RESEARCH-INFORMED GEOMETRY D CANDIDATE FOR REVIEW.
