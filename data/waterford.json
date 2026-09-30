@@ -1,18 +1,15 @@
 {
-  "version": "0.23",
+  "version": "0.24",
   "id": "waterford",
-  "names": {
-    "modern": "Waterford",
-    "historic": "Veðrafjǫrðr",
-    "display": "Waterford / Veðrafjǫrðr"
-  },
-  "status": "research_pilot",
+  "names": {"modern": "Waterford", "historic": "Veðrafjǫrðr", "display": "Waterford / Veðrafjǫrðr"},
+  "status": "research_pack",
   "period": [900, 1050],
-  "historical_baseline": "v0.23 research skeleton",
+  "historical_baseline": "v0.24 archaeological reconstruction pack",
   "presentation_contract": {
     "evidence_geometry_separated": true,
     "public_render_geometry_level": "D",
     "source_plan_geometry_public": false,
+    "birdseye_generation_status": "NOT_YET_APPROVED",
     "warning": "Schematic render only. Exact 10th-century street grid, quay line and defensive circuit remain unresolved."
   },
   "schematic": {
@@ -25,204 +22,97 @@
   "phases": {
     "900": {
       "title": "Waterford / Veðrafjǫrðr c. AD 900",
-      "summary": "第一阶段 Viking occupation / longphort 语境。Waterford City & County Council 的历史综述记载 9 世纪中叶已有 longphort，并在 902 年一度被放弃；精确聚落范围和它与后来 Dundory 核心的空间关系仍未解决。",
-      "defence": "unresolved first longphort context",
+      "summary": "第一阶段 Viking occupation / longphort 语境。历史综述支持 9 世纪中叶已有 Viking base，但精确聚落范围及其与后来 Dundory 核心的空间连续性仍未解决。",
+      "defence": "unresolved first-longphort context",
       "urban": "early Viking occupation · spatially unresolved",
-      "evidence": "settlement presence stronger than mapped extent",
+      "evidence": "presence B; mapped extent unresolved",
       "geometry": "D",
       "urbanShape": [[79,37],[86,34],[91,39],[92,48],[87,55],[79,52],[76,44]],
       "defenceLine": null,
-      "buildings": [
-        "timber occupation / longphort activity — generalized only",
-        "no fixed urban street pattern asserted"
-      ],
-      "prohibitions": [
-        "precise later Viking Triangle street grid",
-        "stone Reginald's Tower",
-        "Norman city wall or towers",
-        "measured quay frontage"
-      ]
+      "must_show": ["River Suir maritime setting","low spatial certainty","early Viking occupation / longphort context"],
+      "may_show": ["sparse timber activity","generalized boats / landing activity","light enclosure language if explicitly interpretive"],
+      "buildings": ["timber occupation / longphort activity — generalized only","no fixed urban street pattern asserted"],
+      "prohibitions": ["precise later Viking Triangle street grid","stone Reginald's Tower","mature western city","measured quay frontage","Bakehouse Lane late-11th-century defence"]
     },
     "950": {
       "title": "Waterford / Veðrafjǫrðr c. AD 950",
-      "summary": "914 年重新建立后的 10 世纪 Hiberno-Norse settlement。公开发掘综述把早期核心放在三角形岬地东端、后来的 Reginald's Tower / Dundory 一带；Bailey's New Street 的两条沟可能与该区域西缘防御有关，但其精确年代和完整线路不能确定。",
+      "summary": "914 年重新建立后的 10 世纪 Hiberno-Norse settlement。公开发掘讨论把早期核心解释为位于三角形岬地东端 Dundory 一带；Bailey's New Street 两条沟确实存在，但它们与 Dundory 西界的关系仍属解释而非实测 AD950 城界。",
       "defence": "earthwork / ditch relationship plausible; exact circuit unresolved",
       "urban": "eastern Dundory-focused settlement",
-      "evidence": "10th-century core C; exact boundary D",
+      "evidence": "ditches A; Dundory-western-limit interpretation B",
       "geometry": "D",
       "urbanShape": [[70,34],[84,31],[93,37],[94,50],[87,59],[72,59],[65,51],[65,41]],
       "defenceLine": [[67,37],[64,44],[65,52],[70,58]],
-      "buildings": [
-        "timber houses — generalized",
-        "craft / service structures — possible, not individually located",
-        "river-facing activity without a fixed quay line"
-      ],
-      "prohibitions": [
-        "exact Bailey's New Street ditch = AD950 wall claim",
-        "continuous stone fortification",
-        "modern stone Reginald's Tower",
-        "monumental or measured Viking quay"
-      ]
+      "must_show": ["River Suir","St John's River / marsh relationship","eastern Dundory-focused core","defence uncertainty"],
+      "may_show": ["generalized timber houses","craft / service structures","modest river-facing activity","schematic landward ditch / bank language"],
+      "buildings": ["timber houses — generalized","craft / service structures — possible, not individually located","river-facing activity without a fixed quay line"],
+      "prohibitions": ["Bailey's New Street ditches as a proven exact AD950 circuit","continuous stone fortification","modern stone Reginald's Tower","mature western late-Viking city","monumental or measured Viking quay"]
     },
     "1000": {
       "title": "Waterford / Veðrafjǫrðr c. AD 1000",
-      "summary": "10 世纪末至 11 世纪初的过渡阶段。城市由东端核心向西发展的总体趋势有考古背景支持，但现有公开资料不足以给出 AD1000 的精确占地边界、街网和城防线路。",
+      "summary": "10 世纪末至 11 世纪初的过渡阶段。由东端核心向西发展的总体趋势可以表达，但现有公开资料不足以给出 AD1000 的精确占地边界、街网、防御线路或码头线。",
       "defence": "early defensive system present in concept; line unresolved",
       "urban": "growing core · westward development beginning",
       "evidence": "development trend C; rendered envelope D",
       "geometry": "D",
       "urbanShape": [[58,33],[82,30],[94,36],[95,51],[88,63],[66,66],[54,59],[52,45]],
       "defenceLine": [[57,37],[53,45],[54,57],[61,64]],
-      "buildings": [
-        "timber dwellings",
-        "yards and paths",
-        "craft / storage structures"
-      ],
-      "prohibitions": [
-        "full late-11th-century western defensive ditch",
-        "late medieval stone walls",
-        "precise quay line",
-        "fully mature 12th-century street frontage"
-      ]
+      "must_show": ["east-to-west growth relative to AD950","Suir / St John's hydrological frame","timber urban fabric"],
+      "may_show": ["developing street axes","yards and paths","craft / storage structures","more continuous occupation toward later Peter / High Street areas"],
+      "buildings": ["timber dwellings","yards and paths","craft / storage structures"],
+      "prohibitions": ["Bakehouse Lane AD1070–1080 defence as AD1000 geometry","late medieval stone walls","precise quay line","fully mature 12th-century street frontage"]
     },
     "1050": {
       "title": "Waterford / Veðrafjǫrðr c. AD 1050",
-      "summary": "11 世纪木构城市证据明显增强。Arundel Square / Peter Street 发掘记录了 11 世纪结构、三开间木构住宅、路径与地块边界；但 Bakehouse Lane 城防沟的树轮年代集中在 AD1070–1080，因此不能把那条较晚防线直接回推到 AD1050。",
+      "summary": "11 世纪木构城市证据明显增强。Arundel Square / Peter Street 发掘支持街面、三开间木构住宅、后排建筑、路径和地块边界；但 AD1070–1080 的 Bakehouse Lane 城防与约 AD1083 的 Peter/Olaf 特征都不能自动倒推到 AD1050。",
       "defence": "pre-1070/80 defensive state unresolved",
-      "urban": "expanding late Viking urban fabric",
-      "evidence": "11th-century occupation A; exact 1050 extent C/D",
+      "urban": "expanding late-Viking timber town",
+      "evidence": "11th-century occupation A; exact AD1050 extent C/D",
       "geometry": "D",
       "urbanShape": [[42,32],[79,29],[95,35],[96,52],[87,68],[57,72],[40,64],[36,48]],
       "defenceLine": null,
-      "buildings": [
-        "three-aisled timber houses",
-        "smaller rear buildings",
-        "paths and property boundaries",
-        "pits / storage features"
-      ],
-      "prohibitions": [
-        "Bakehouse Lane AD1070–1080 ditch as default AD1050 boundary",
-        "Anglo-Norman stone circuit",
-        "13th-century quay frontage",
-        "modern Reginald's Tower form"
-      ]
+      "must_show": ["denser timber urban fabric","street-fronting houses plus rear structures","paths / property boundaries","pits / storage and backland activity","westward expansion relative to AD950"],
+      "may_show": ["three-aisled timber houses","clay-floor / wattle-wall visual language","generalized High Street / Peter Street axes","heterogeneous rear-yard activity"],
+      "buildings": ["three-aisled timber houses","smaller rear buildings","paths and property boundaries","pits / storage features"],
+      "prohibitions": ["Bakehouse Lane AD1070–1080 ditch as default AD1050 boundary","Peter/Olaf AD1083 feature as securely present in AD1050","Anglo-Norman stone circuit","13th-century quay frontage","modern Reginald's Tower form"]
     }
   },
   "controls": [
-    {
-      "name": "Bailey's New Street",
-      "itm": [660987, 612422],
-      "latlon": [52.260127, -7.106629],
-      "evidence": "A",
-      "geometry": "B",
-      "role": "excavated early-defence context; ditches may relate to Dundory western limit",
-      "source_id": "EXCAVATIONS_1999_851"
-    },
-    {
-      "name": "Arundel Square",
-      "itm": [660737, 612452],
-      "latlon": [52.260424, -7.110284],
-      "evidence": "A",
-      "geometry": "B",
-      "role": "11th-century houses, Peter Street surface, paths and property boundaries",
-      "source_id": "EXCAVATIONS_1990_108"
-    },
-    {
-      "name": "Bakehouse Lane",
-      "itm": [660637, 612352],
-      "latlon": [52.259537, -7.111766],
-      "evidence": "A",
-      "geometry": "B",
-      "role": "late Viking defence control dated by timbers to c. AD1070–1080; negative control for AD1050",
-      "source_id": "EXCAVATIONS_1988_63"
-    }
+    {"name":"Bailey's New Street 1999","itm":[660987,612422],"latlon":[52.260127,-7.106629],"evidence":"A","geometry":"B","role":"excavated site control; two large ditches directly observed","interpretation_limit":"defensive relation to Dundory is interpretive, not an exact AD950 boundary","source_id":"EXCAVATIONS_1999_851"},
+    {"name":"Bailey's New Street 2013","itm":[660958,612491],"latlon":[52.260743,-7.107043],"evidence":"A","geometry":"B","role":"public-realm monitoring control","interpretation_limit":"quay-front masonry was later reinterpreted as possible road surface; do not use as town-wall control","source_id":"EXCAVATIONS_2013_488"},
+    {"name":"Arundel Square","itm":[660737,612452],"latlon":[52.260424,-7.110284],"evidence":"A","geometry":"B","role":"11th-century houses, Peter Street surface, paths and property boundaries","source_id":"EXCAVATIONS_1990_108"},
+    {"name":"Peter Street / Olaf Street","itm":[660637,612352],"latlon":[52.259537,-7.111766],"evidence":"A","geometry":"B","role":"late-Viking timber urban control including post-1050 c.AD1083 timber date","interpretation_limit":"coordinate is site-level; AD1083 feature must not be projected into AD1050","source_id":"EXCAVATIONS_1988_61"},
+    {"name":"Bakehouse Lane","itm":[660637,612352],"latlon":[52.259537,-7.111766],"evidence":"A","geometry":"B","role":"late-Viking defence control dated by ditch timbers to c.AD1070–1080","interpretation_limit":"negative chronological control for AD1050","source_id":"EXCAVATIONS_1988_63"},
+    {"name":"Henrietta Street","itm":[660890,612464],"latlon":[52.260510,-7.108030],"evidence":"A","geometry":"B","role":"archaeological survival control near Peter Street / St Olaf's area","interpretation_limit":"not a mapped Viking building footprint","source_id":"EXCAVATIONS_2003_1927"}
   ],
   "claims": [
-    {
-      "id": "WAT_NAME_NORSE",
-      "claim": "Waterford derives from the Old Norse name Veðrafjǫrðr.",
-      "evidence_level": "A",
-      "geometry_level": null,
-      "source_id": "HERITAGE_IRELAND_HIBERNO_NORSE"
-    },
-    {
-      "id": "WAT_914_REESTABLISHMENT",
-      "claim": "A Viking base / longphort was re-established at Waterford in AD 914 after an interruption around AD 902.",
-      "evidence_level": "A",
-      "geometry_level": null,
-      "source_id": "WATERFORD_COUNCIL_ARCHIVE"
-    },
-    {
-      "id": "WAT_DUNDORY_CORE",
-      "claim": "The 10th-century Hiberno-Norse settlement is interpreted as centred on the eastern end of the triangular promontory around Dundory / the later Reginald's Tower area.",
-      "evidence_level": "A",
-      "geometry_level": "C",
-      "source_id": "EXCAVATIONS_1999_851"
-    },
-    {
-      "id": "WAT_EARLY_QUAY_UNKNOWN",
-      "claim": "The form, date and size of Waterford's earliest quayside remain poorly known.",
-      "evidence_level": "A",
-      "geometry_level": "UNRESOLVED",
-      "source_id": "NMS_WATERFORD_URBAN_SURVEY_1989"
-    },
-    {
-      "id": "WAT_11C_URBAN_FABRIC",
-      "claim": "Arundel Square preserves late Viking urban evidence including 11th-century structures, a paved Peter Street surface, houses, paths and property boundaries.",
-      "evidence_level": "A",
-      "geometry_level": "B/C",
-      "source_id": "EXCAVATIONS_1990_108"
-    },
-    {
-      "id": "WAT_LATE_11C_DEFENCE",
-      "claim": "Timbers from the Bakehouse Lane defensive ditch produced dendrochronological dates centred on AD 1070–1080.",
-      "evidence_level": "A",
-      "geometry_level": "B",
-      "source_id": "EXCAVATIONS_1988_63"
-    }
+    {"id":"WAT_914_REESTABLISHMENT","claim":"A Viking base / longphort is reported as re-established at Waterford in AD914 after an interruption around AD902.","evidence_level":"B","geometry_level":null,"source_id":"WATERFORD_COUNCIL_ARCHIVE"},
+    {"id":"WAT_TRIANGULAR_TOPOGRAPHY","claim":"Hiberno-Norse Waterford occupied triangular ground bounded by the River Suir and marshy ground around St John's River, with the eastern apex in the later Reginald's Tower area.","evidence_level":"B","geometry_level":"C","source_id":"EXCAVATIONS_1999_851"},
+    {"id":"WAT_DUNDORY_CORE","claim":"The 10th-century settlement is interpreted as centred on the eastern end of the promontory around Dundory.","evidence_level":"B","geometry_level":"C","source_id":"EXCAVATIONS_1999_851"},
+    {"id":"WAT_BAILEY_DITCHES_EXIST","claim":"Two large roughly north-south ditches were excavated at Bailey's New Street in 1999.","evidence_level":"A","geometry_level":"B","source_id":"EXCAVATIONS_1999_851"},
+    {"id":"WAT_BAILEY_DEFENCE_INTERPRETATION","claim":"The Bailey's New Street ditches are interpreted as likely related to defences east of the excavation and may mark a Dundory western limit.","evidence_level":"B","geometry_level":"C","source_id":"EXCAVATIONS_1999_851"},
+    {"id":"WAT_EARLY_QUAY_UNKNOWN","claim":"The form, date and size of Waterford's earliest quayside remain poorly known; a measured Viking quay line is not currently defensible.","evidence_level":"A","geometry_level":"UNRESOLVED","source_id":"NMS_WATERFORD_URBAN_SURVEY_1989"},
+    {"id":"WAT_11C_URBAN_FABRIC","claim":"Arundel Square preserves late-Viking urban evidence including 11th-century structures, a paved Peter Street surface, three-aisled houses, smaller rear structures, paths and property boundaries.","evidence_level":"A","geometry_level":"B/C","source_id":"EXCAVATIONS_1990_108"},
+    {"id":"WAT_HIGH_STREET_LATE_VIKING","claim":"High Street is described in published excavation reporting as one of Waterford's principal late-Viking streets.","evidence_level":"B","geometry_level":"C","source_id":"EXCAVATIONS_1993_217"},
+    {"id":"WAT_PETER_OLAF_1083","claim":"A timber from a Peter Street / Olaf Street sunken-featured structure was reported with a date around AD1083, making it a post-1050 chronological control.","evidence_level":"A","geometry_level":"B","source_id":"EXCAVATIONS_1988_61"},
+    {"id":"WAT_LATE_11C_DEFENCE","claim":"Bakehouse Lane Viking town defences included a large ditch and inner bank; ditch timbers produced dendrochronological dates centred on AD1070–1080.","evidence_level":"A","geometry_level":"B","source_id":"EXCAVATIONS_1988_63"},
+    {"id":"WAT_BAILEY_WALL_REINTERPRETATION","claim":"Masonry encountered in 2013 at Bailey's New Street was initially considered possible town wall but subsequent monitoring indicated it may instead be a road surface.","evidence_level":"A","geometry_level":"B","source_id":"EXCAVATIONS_2013_488"}
   ],
   "sources": [
-    {
-      "id": "WATERFORD_COUNCIL_ARCHIVE",
-      "title": "Waterford City Council Collection",
-      "publisher": "Waterford City & County Council",
-      "url": "https://waterfordcouncil.ie/services/culture-heritage/archives/collections/waterford-city-council-collection-2/",
-      "rights": "public factual reference; do not mirror protected media"
-    },
-    {
-      "id": "NMS_WATERFORD_URBAN_SURVEY_1989",
-      "title": "County Waterford and City Urban Archaeology Survey (1989)",
-      "publisher": "National Monuments Service",
-      "url": "https://www.archaeology.ie/app/uploads/2025/05/County_Waterford__City_Urban_Archaeology_Survey-1989.pdf",
-      "rights": "public research reference; do not reproduce source figures without separate rights review"
-    },
-    {
-      "id": "EXCAVATIONS_1999_851",
-      "title": "1999:851 — Bailey's New Street, Waterford",
-      "publisher": "Excavations.ie / NMI burial excavation records",
-      "url": "https://excavations.ie/report/1999/Waterford/0004762/",
-      "rights": "public factual coordinate/reference use only; no source-plan reproduction"
-    },
-    {
-      "id": "EXCAVATIONS_1990_108",
-      "title": "1990:108 — Arundel Square, Waterford",
-      "publisher": "Excavations.ie / NMI burial excavation records",
-      "url": "https://excavations.ie/report/1990/Waterford/0001043/",
-      "rights": "public factual coordinate/reference use only; no source-plan reproduction"
-    },
-    {
-      "id": "EXCAVATIONS_1988_63",
-      "title": "1988:63 — Bakehouse Lane, Waterford",
-      "publisher": "Excavations.ie / NMI burial excavation records",
-      "url": "https://excavations.ie/report/1988/Waterford/0000828/",
-      "rights": "public factual coordinate/reference use only; no source-plan reproduction"
-    },
-    {
-      "id": "HERITAGE_IRELAND_HIBERNO_NORSE",
-      "title": "Sagas & Scéals: The Hiberno-Norse of Waterford",
-      "publisher": "Heritage Ireland / OPW",
-      "url": "https://heritageireland.ie/ga/blag/sagas-sceals-the-hiberno-norse-of-waterford/",
-      "rights": "public factual reference"
-    }
-  ]
+    {"id":"WATERFORD_COUNCIL_ARCHIVE","title":"Waterford City Council Collection","publisher":"Waterford City & County Council","url":"https://waterfordcouncil.ie/services/culture-heritage/archives/collections/waterford-city-council-collection-2/","rights":"public factual reference; do not mirror protected media"},
+    {"id":"NMS_WATERFORD_URBAN_SURVEY_1989","title":"County Waterford and City Urban Archaeology Survey (1989)","publisher":"National Monuments Service","url":"https://www.archaeology.ie/app/uploads/2025/05/County_Waterford__City_Urban_Archaeology_Survey-1989.pdf","rights":"public research reference; do not reproduce source figures without separate rights review"},
+    {"id":"EXCAVATIONS_1999_851","title":"1999:851 — Bailey's New Street, Waterford","publisher":"Excavations.ie / NMI burial excavation records","url":"https://excavations.ie/report/1999/Waterford/0004762/","rights":"public factual coordinate/reference use only; no source-plan reproduction"},
+    {"id":"EXCAVATIONS_2013_488","title":"2013:488 — Bailey's New Street, Waterford","publisher":"Excavations.ie / NMI burial excavation records","url":"https://excavations.ie/report/2013/Waterford/0024281/","rights":"public factual coordinate/reference use only; no source-plan reproduction"},
+    {"id":"EXCAVATIONS_1990_108","title":"1990:108 — Arundel Square, Waterford","publisher":"Excavations.ie / NMI burial excavation records","url":"https://excavations.ie/report/1990/Waterford/0001043/","rights":"public factual coordinate/reference use only; no source-plan reproduction"},
+    {"id":"EXCAVATIONS_1988_61","title":"1988:61 — Peter Street / Olaf Street, Waterford","publisher":"Excavations.ie / NMI burial excavation records","url":"https://excavations.ie/report/1988/Waterford/0000826/","rights":"public factual coordinate/reference use only; no source-plan reproduction"},
+    {"id":"EXCAVATIONS_1988_63","title":"1988:63 — Bakehouse Lane, Waterford","publisher":"Excavations.ie / NMI burial excavation records","url":"https://excavations.ie/report/1988/Waterford/0000828/","rights":"public factual coordinate/reference use only; no source-plan reproduction"},
+    {"id":"EXCAVATIONS_1993_217","title":"1993:217 — 19–21 High Street, Waterford","publisher":"Excavations.ie / NMI burial excavation records","url":"https://excavations.ie/report/1993/Waterford/0001595/","rights":"public factual reference only; no source-plan reproduction"},
+    {"id":"EXCAVATIONS_2003_1927","title":"2003:1927 — Henrietta Street, Waterford","publisher":"Excavations.ie / NMI burial excavation records","url":"https://excavations.ie/report/2003/Waterford/0010959/","rights":"public factual coordinate/reference use only; no source-plan reproduction"}
+  ],
+  "reconstruction_gate": {
+    "birdseye_status": "NOT_YET_APPROVED",
+    "preferred_first_candidate": "AD1050",
+    "reason": "11th-century urban evidence is materially stronger than the 10th-century spatial evidence, while post-1050 features can be explicitly excluded.",
+    "required_reviews": ["historical shoreline / marsh envelope","street-axis confidence","westward occupation extent","defensive-corridor treatment","waterfront treatment","St Olaf's ecclesiastical context for chosen year"]
+  }
 }
