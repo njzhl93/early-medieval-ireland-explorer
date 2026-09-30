@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Waterford / Veðrafjǫrðr AD 900–1050 research pilot for the Early Medieval Ireland Explorer.">
+  <title>Waterford / Veðrafjǫrðr · Early Medieval Ireland Explorer</title>
+  <link rel="stylesheet" href="assets/showcase.css">
+  <link rel="stylesheet" href="assets/v023.css">
+</head>
+<body class="page-city page-waterford" data-city="waterford">
+  <header class="site-header">
+    <a class="brand" href="index.html"><span class="brand-mark">É</span><span><b>Early Medieval Ireland Explorer</b><small>成为至高王 · Research Atlas</small></span></a>
+    <nav class="site-nav"><a href="index.html">全国入口</a><a href="#timeline">时间轴</a><a href="#controls">考古控制</a><a href="#claims">证据</a><a href="#sources">来源</a></nav>
+  </header>
+
+  <main>
+    <section class="city-hero shell">
+      <div>
+        <p class="eyebrow">RESEARCH PILOT · AD 900–1050</p>
+        <h1>Waterford <span>/ Veðrafjǫrðr</span></h1>
+        <p>第二个城市试点。这里暂不追求一张“完整维京城市图”，而是先把 10 世纪 Dundory 核心、River Suir、St John’s River 湿地、11 世纪西向扩张以及晚 11 世纪城防证据分层表达。</p>
+      </div>
+      <div class="city-meta"><span>Viking / Hiberno-Norse town</span><span>Research pilot</span><span>Public render D</span></div>
+    </section>
+
+    <section class="shell pilot-banner">
+      <div><p class="eyebrow">WHY THIS PAGE LOOKS DIFFERENT</p><h2>证据不够，就不假装和 Dublin 一样精细</h2></div>
+      <p>Waterford 的 10 世纪聚落位置和总体地形关系可以讨论，但早期街网、精确码头线与完整防御线路仍有明显空白。本页因此把“知道的点”“可约束的关系”和“只用于阅读的 Geometry D 包络”分开。</p>
+    </section>
+
+    <div id="runtimeNotice" class="runtime-notice shell" hidden></div>
+
+    <section id="timeline" class="shell city-workbench waterford-workbench">
+      <div class="phase-control" role="tablist" aria-label="Waterford 时间相位">
+        <button data-year="900" role="tab">AD 900</button>
+        <button data-year="950" role="tab">AD 950</button>
+        <button data-year="1000" role="tab">AD 1000</button>
+        <button data-year="1050" role="tab">AD 1050</button>
+      </div>
+
+      <div class="workbench-grid">
+        <div class="reconstruction-panel parchment-panel">
+          <div class="panel-topline"><span>RESEARCH SCHEMATIC</span><div class="legend-inline"><i class="lg-water"></i> water / marsh <i class="lg-urban"></i> occupation <i class="lg-bank"></i> possible defence</div></div>
+          <svg id="citySvg" viewBox="0 0 100 100" role="img" aria-label="Waterford phase reconstruction schematic"></svg>
+          <div class="map-disclaimer">Geometry D · local normalized schematic · not metric · not WGS84 · not an archaeological survey plan</div>
+        </div>
+
+        <aside class="phase-detail">
+          <p class="eyebrow">PHASE</p>
+          <h2 id="phaseTitle">Waterford c. AD 950</h2>
+          <p class="phase-summary" id="phaseSummary"></p>
+          <div class="detail-row"><span>Defence</span><b id="phaseDefence"></b></div>
+          <div class="detail-row"><span>Urban character</span><b id="phaseUrban"></b></div>
+          <div class="detail-row"><span>Evidence</span><b id="phaseEvidence"></b></div>
+          <div class="detail-row"><span>Geometry</span><b id="phaseGeometry"></b></div>
+          <h3>可用于复原的建筑语言</h3><ul id="buildingList" class="compact-list"></ul>
+          <h3>这一阶段不能出现</h3><ul id="prohibitionList" class="compact-list warning-list"></ul>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section shell waterford-focus">
+      <header class="section-heading"><p class="eyebrow">CURRENT INTERPRETATION</p><h2>Dundory first, precision later</h2><p>当前最重要的不是“把 Waterford 画满”，而是先把三个时间尺度分开：10 世纪东端核心、11 世纪木构城市扩张，以及 AD1070–1080 才有直接树轮日期支持的较晚防御沟。</p></header>
+      <div class="focus-grid">
+        <article><span>01</span><h3>Eastern core</h3><p>10 世纪 Hiberno-Norse settlement 被解释为集中在三角形岬地东端、Dundory / 后来 Reginald’s Tower 一带。</p></article>
+        <article><span>02</span><h3>Rivers define the setting</h3><p>River Suir 与 St John’s River 周边湿地形成聚落的基本地形框架；防御线不能与自然水体混写。</p></article>
+        <article><span>03</span><h3>11th-century urban evidence</h3><p>Arundel Square / Peter Street 提供更具体的木构住宅、街面、路径和地块边界证据。</p></article>
+        <article><span>04</span><h3>1070–1080 is not 1050</h3><p>Bakehouse Lane 城防沟的树轮日期集中在 AD1070–1080，因此不能直接作为 AD1050 的默认边界。</p></article>
+      </div>
+    </section>
+
+    <section id="controls" class="section section-dark controls-section">
+      <div class="shell">
+        <header class="split-intro"><div><p class="eyebrow light">REAL-WORLD CONTROLS</p><h2>考古地点可以精确，城市边界仍然可以未知</h2></div><p>下面的 ITM 坐标来自公开 excavation records。它们是 Geometry B site controls；连接它们并不能自动生成一条 Geometry B 街道、城墙或聚落边界。</p></header>
+        <div class="controls-grid">
+          <div class="control-plot-wrap"><svg id="controlPlot" viewBox="0 0 720 460" role="img" aria-label="Waterford archaeological control plot"></svg><div class="control-legend"><span><i class="control-b"></i> Geometry B site control</span></div></div>
+          <div class="control-table" id="controlTable"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="claims" class="section shell claims-section">
+      <header class="section-heading"><p class="eyebrow">CLAIM REGISTER</p><h2>先声明证据，再画城市</h2><p>这些条目用于防止展示层把“历史事实”“空间推断”和“视觉复原”混成同一种确定性。</p></header>
+      <div id="claimsTable" class="claims-table"></div>
+    </section>
+
+    <section class="section shell confidence-section">
+      <header class="section-heading narrow"><p class="eyebrow">READ THE MAP CORRECTLY</p><h2>B point · C relation · D render</h2></header>
+      <div class="confidence-lanes">
+        <article class="lane-b"><b>B</b><div><h3>Excavated control</h3><p>公开可定位的 excavation site，例如 Bailey’s New Street、Arundel Square、Bakehouse Lane。</p></div></article>
+        <article class="lane-c"><b>C</b><div><h3>Historical relationship</h3><p>Dundory 的东端核心、向西发展趋势、河流与聚落之间的约束关系。</p></div></article>
+        <article class="lane-d"><b>D</b><div><h3>Phase envelope</h3><p>本页为帮助理解时间变化绘制的城市包络与示意线，不承担实测边界声明。</p></div></article>
+      </div>
+    </section>
+
+    <section id="sources" class="section shell provenance-section">
+      <header class="section-heading"><p class="eyebrow">PROVENANCE & RIGHTS</p><h2>Waterford pilot sources</h2><p>本页只公开来源链接、地点坐标和简短事实摘要，不复制 excavation plans 或受限制图件。</p></header>
+      <div id="sourceGrid" class="source-grid waterford-source-grid"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer shell"><div><b>Waterford / Veðrafjǫrðr research pilot</b><span>Multi-city framework · v0.23</span></div><a href="index.html">← 返回 Ireland Explorer</a></footer>
+  <script type="module" src="assets/city-runtime.js"></script>
+</body>
+</html>
