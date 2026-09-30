@@ -65,6 +65,8 @@ function renderPhase(data, year) {
   setText('phaseUrban', phase.urban);
   setText('phaseEvidence', phase.evidence);
   setText('phaseGeometry', `Geometry ${phase.geometry}`);
+  setList('mustShowList', phase.must_show);
+  setList('mayShowList', phase.may_show);
   setList('buildingList', phase.buildings);
   setList('prohibitionList', phase.prohibitions);
   renderSchematic(data, phase);
@@ -118,7 +120,7 @@ function renderControls(data) {
     g.append(circle);
     const label = document.createElementNS(NS, 'text');
     label.setAttribute('x', x(control.itm[0]) + 12);
-    label.setAttribute('y', y(control.itm[1]) + (index === 0 ? -8 : 15));
+    label.setAttribute('y', y(control.itm[1]) + (index % 2 === 0 ? -8 : 15));
     label.textContent = control.name;
     g.append(label);
     svg.append(g);
@@ -133,7 +135,11 @@ function renderControls(data) {
 
   table.innerHTML = controls.map(control => `
     <article>
-      <div><b>${control.name}</b><small>${control.role}</small></div>
+      <div>
+        <b>${control.name}</b>
+        <small>${control.role}</small>
+        ${control.interpretation_limit ? `<small class="interpretation-limit">Limit: ${control.interpretation_limit}</small>` : ''}
+      </div>
       <span>E ${control.itm[0]}<br>N ${control.itm[1]}</span>
       <em>Evidence ${control.evidence}<br>Geometry ${control.geometry}</em>
     </article>`).join('');
@@ -162,6 +168,15 @@ function renderSources(data) {
     </article>`).join('');
 }
 
+function renderReconstructionGate(data) {
+  const gate = data.reconstruction_gate;
+  if (!gate) return;
+  setText('birdseyeStatus', gate.birdseye_status);
+  setText('preferredBirdseyePhase', gate.preferred_first_candidate);
+  setText('birdseyeReason', gate.reason);
+  setList('birdseyeReviewList', gate.required_reviews);
+}
+
 async function init() {
   if (!CITY_ID) return;
   const response = await fetch(`data/${CITY_ID}.json`);
@@ -175,6 +190,7 @@ async function init() {
   renderControls(data);
   renderClaims(data);
   renderSources(data);
+  renderReconstructionGate(data);
 
   const hashYear = +(location.hash.match(/phase-(900|950|1000|1050)/) || [])[1];
   renderPhase(data, data.phases[String(hashYear)] ? hashYear : 950);
