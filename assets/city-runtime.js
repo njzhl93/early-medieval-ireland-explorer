@@ -177,6 +177,63 @@ function renderReconstructionGate(data) {
   setList('birdseyeReviewList', gate.required_reviews);
 }
 
+function renderPreproduction(pack) {
+  if (!pack) return;
+
+  setText('birdseyeStatus', pack.status);
+  setText('preferredBirdseyePhase', pack.target_phase);
+  setText('birdseyeReason', pack.rationale);
+  setList('birdseyeReviewList', pack.candidate_1_visual_qa || []);
+
+  const gate = document.getElementById('gate');
+  if (!gate || document.getElementById('preproduction')) return;
+
+  const section = document.createElement('section');
+  section.id = 'preproduction';
+  section.className = 'section shell';
+  section.innerHTML = `
+    <header class="section-heading">
+      <p class="eyebrow">AD1050 PRE-PRODUCTION · v${pack.version}</p>
+      <h2>不确定性已经被转换成复原规则</h2>
+      <p>${pack.scope}</p>
+    </header>
+    <div class="focus-grid">
+      ${(pack.gate_resolution || []).map((item, index) => `
+        <article>
+          <span>${String(index + 1).padStart(2, '0')}</span>
+          <h3>${item.id.replaceAll('_', ' ')}</h3>
+          <p><b>${item.status}</b></p>
+          <p>${item.rule}</p>
+        </article>`).join('')}
+    </div>
+    <div class="birdseye-gate" style="margin-top:24px">
+      <div class="gate-status">
+        <span class="status-pill">${pack.status}</span>
+        <h3>Candidate target: ${pack.target_phase}</h3>
+        <p>${pack.rationale}</p>
+        <p class="research-pack-link"><a class="text-link" href="research/waterford-ad1050-master-constraints-v025.md">Open AD1050 master constraints ↗</a></p>
+        <p class="research-pack-link"><a class="text-link" href="research/waterford-ad1050-image-prompt-v025.txt">Open Candidate 1 image prompt ↗</a></p>
+      </div>
+      <div class="gate-review">
+        <h3>Candidate 1 hard negatives</h3>
+        <ul>${(pack.master_constraints?.must_not_show || []).map(item => `<li>${item}</li>`).join('')}</ul>
+      </div>
+    </div>
+  `;
+  gate.insertAdjacentElement('afterend', section);
+}
+
+async function loadOptionalPreproduction() {
+  if (!CITY_ID) return null;
+  try {
+    const response = await fetch(`data/${CITY_ID}-ad1050-preproduction.json`);
+    if (!response.ok) return null;
+    return response.json();
+  } catch {
+    return null;
+  }
+}
+
 async function init() {
   if (!CITY_ID) return;
   const response = await fetch(`data/${CITY_ID}.json`);
@@ -191,6 +248,9 @@ async function init() {
   renderClaims(data);
   renderSources(data);
   renderReconstructionGate(data);
+
+  const preproduction = await loadOptionalPreproduction();
+  if (preproduction) renderPreproduction(preproduction);
 
   const hashYear = +(location.hash.match(/phase-(900|950|1000|1050)/) || [])[1];
   renderPhase(data, data.phases[String(hashYear)] ? hashYear : 950);
