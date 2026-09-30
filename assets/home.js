@@ -7,14 +7,14 @@ async function loadRegistry() {
   return response.json();
 }
 
-function addResearchPilotCard(registry) {
+function addWaterfordCard(registry) {
   const waterford = registry.cities.find(city => city.id === 'waterford');
   const dublinCard = document.querySelector('.map-card-link');
   if (!waterford || !dublinCard || document.querySelector('.waterford-pilot-link')) return;
   const card = document.createElement('a');
   card.className = 'map-card-link waterford-pilot-link';
   card.href = waterford.page;
-  card.innerHTML = '<span>Research pilot</span><b>Waterford / Veðrafjǫrðr · AD 900 → 1050</b><i>→</i>';
+  card.innerHTML = '<span>Archaeological reconstruction pack</span><b>Waterford / Veðrafjǫrðr · AD 900 → 1050</b><i>→</i>';
   dublinCard.insertAdjacentElement('afterend', card);
 }
 
@@ -32,9 +32,9 @@ function renderCityNetwork(registry) {
   section.className = 'section shell city-network';
   section.innerHTML = `
     <header class="section-heading">
-      <p class="eyebrow">CITY NETWORK · v0.23</p>
+      <p class="eyebrow">CITY NETWORK · v0.24</p>
       <h2>从单城复原，进入多城市比较</h2>
-      <p>Dublin 是当前深度复原基准；Waterford 是第二个研究试点。新城市只有在 evidence / geometry 合同足够明确后，才会从 research pilot 升级为 deep reconstruction。</p>
+      <p>Dublin 是当前深度复原基准；Waterford 已建立 archaeological reconstruction pack，但尚未通过最终鸟瞰图生成门槛。新城市只有在 evidence / geometry 合同足够明确后，才会升级。</p>
     </header>
     <div class="city-network-grid">
       <article class="city-network-card featured">
@@ -44,9 +44,9 @@ function renderCityNetwork(registry) {
         <a href="${dublin.page}">Open Dublin →</a>
       </article>
       <article class="city-network-card research">
-        <span class="status">Research pilot</span>
+        <span class="status">Archaeological reconstruction pack</span>
         <h3>${waterford.modern_name} / ${waterford.historic_name}</h3>
-        <p>优先处理 Dundory 东端核心、Suir / St John’s River 地形、11 世纪城市扩张与晚 11 世纪城防年代。</p>
+        <p>六个公开考古控制、11 世纪城市形态证据、Dundory / Suir / St John’s marsh 约束，以及逐阶段 must / may / must-not-show 规则。</p>
         <a href="${waterford.page}">Open Waterford →</a>
       </article>
       <article class="city-network-card planned">
@@ -56,13 +56,13 @@ function renderCityNetwork(registry) {
         <span class="status">No speculative reconstruction yet</span>
       </article>
     </div>
-    <div class="city-status-key"><span class="deep">deep reconstruction</span><span class="research">research pilot</span><span class="planned">planned</span></div>
+    <div class="city-status-key"><span class="deep">deep reconstruction</span><span class="research">research pack</span><span class="planned">planned</span></div>
   `;
   hero.insertAdjacentElement('afterend', section);
 
   const stats = document.querySelectorAll('.hero-stats > div');
   if (stats[0]) stats[0].innerHTML = '<dt>2</dt><dd>city datasets</dd>';
-  if (stats[2]) stats[2].innerHTML = '<dt>7</dt><dd>public controls</dd>';
+  if (stats[2]) stats[2].innerHTML = '<dt>10</dt><dd>public controls</dd>';
 }
 
 try {
@@ -108,13 +108,13 @@ try {
       .addTo(map);
   });
 
-  addResearchPilotCard(registry);
+  addWaterfordCard(registry);
 } catch (err) {
   console.error(err);
   mapNode.hidden = true;
   fallback.hidden = false;
   loadRegistry().then(registry => {
     renderCityNetwork(registry);
-    addResearchPilotCard(registry);
+    addWaterfordCard(registry);
   }).catch(() => {});
 }
