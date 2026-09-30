@@ -1,0 +1,31 @@
+{
+  "version": "0.23",
+  "cities": [
+    {
+      "id": "dublin",
+      "modern_name": "Dublin",
+      "historic_name": "Dyflin",
+      "type": "Viking / Hiberno-Norse town",
+      "status": "deep_reconstruction",
+      "page": "dublin.html",
+      "navigation_anchor": [-6.267462, 53.342286],
+      "navigation_anchor_role": "modern navigation anchor only; not historical extent"
+    },
+    {
+      "id": "waterford",
+      "modern_name": "Waterford",
+      "historic_name": "Veðrafjǫrðr",
+      "type": "Viking / Hiberno-Norse town",
+      "status": "research_pilot",
+      "page": "waterford.html",
+      "navigation_anchor": [-7.1086, 52.2602],
+      "navigation_anchor_role": "modern navigation anchor only; not historical extent"
+    }
+  ],
+  "planned": [
+    {"id": "wexford", "modern_name": "Wexford", "status": "planned"},
+    {"id": "limerick", "modern_name": "Limerick", "status": "planned"},
+    {"id": "clonmacnoise", "modern_name": "Clonmacnoise", "status": "planned"},
+    {"id": "glendalough", "modern_name": "Glendalough", "status": "planned"}
+  ]
+}
