@@ -1,0 +1,36 @@
+{
+  "version": "0.23",
+  "id": "dublin",
+  "names": {
+    "modern": "Dublin",
+    "historic": "Dyflin",
+    "display": "Dublin / Dyflin"
+  },
+  "status": "deep_reconstruction",
+  "period": [900, 1050],
+  "historical_baseline": "v0.20",
+  "presentation_baseline": "v0.22",
+  "presentation_contract": {
+    "evidence_geometry_separated": true,
+    "public_render_geometry_level": "D",
+    "source_plan_geometry_public": false,
+    "figure_33_rights": "research-only / non-public"
+  },
+  "phase_years": [900, 950, 1000, 1050],
+  "phase_summary": {
+    "900": "early Viking settlement / longphort context; precise occupied extent unresolved",
+    "950": "compact post-917 town with Bank 2; current reconstruction focus",
+    "1000": "mature Fishamble / Christchurch / Wood Quay core with Bank 3",
+    "1050": "expanded dense Hiberno-Norse timber town; pre-late-11th-century stone wall"
+  },
+  "controls": [
+    {"name":"Patrick Street","itm":[715058,733662],"evidence":"A","geometry":"B"},
+    {"name":"Dublin Castle / Dubh Linn","itm":[715370,733850],"evidence":"B","geometry":"B"},
+    {"name":"Palace Street","itm":[715426,734039],"evidence":"A","geometry":"B"},
+    {"name":"East Essex Street","itm":[715479,734174],"evidence":"A","geometry":"B"}
+  ],
+  "notes": [
+    "The Dublin deep-dive remains on its bespoke v0.22 renderer in v0.23 to avoid presentation regression.",
+    "Future shared-runtime migration must preserve the current AD950 QA contract and B point / C link / D render separation."
+  ]
+}
